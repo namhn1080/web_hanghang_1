@@ -1,0 +1,219 @@
+body{
+    background-color: whitesmoke;
+    font-family: 'icielinternacional-regular';
+}
+#container {
+    margin: 100px auto;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  h2,
+  h3,
+  a {
+    color: black;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .logo {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 1000 ;
+  }
+  
+  .main-nav {
+    margin-top: 5px;
+  }
+  .logo a,
+  .main-nav a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+  }
+  
+  .main-nav a {
+    color: black;
+    font-size: 2em;
+    font-weight: bolder;
+  }
+  
+  .main-nav a:hover {
+    color: #718daa;
+  }
+  
+  .header {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: 1px solid #a2a2a2;
+    background-color: #f4f4f4;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  /* ================================= 
+    Media Queries
+  ==================================== */
+  
+  @media (min-width: 769px) {
+    .header,
+    .main-nav {
+      display: flex;
+    }
+    .header {
+      flex-direction: column;
+      align-items: center;
+  
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .parent {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-column-gap: 10rem;
+    grid-row-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+  }
+  
+  /********/
+  .product__category,
+  .product__price,
+  .btn {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    font-weight: 700;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+  
+  hr {
+    border: 0;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(20, 16, 16);
+    margin: 22px 0 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  p {
+    margin: 0 0 1.5em 0;
+    font-weight: normal;
+    font-size: large;
+    padding-left: 10px;
+
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 1em 2em;
+    white-space: nowrap;
+    border-radius: 5px;
+  }
+  
+  .product {
+    margin-left: auto;
+    text-transform: capitalize;
+    margin: 0 auto;
+    position: relative;
+    width: 124%;
+    height: 500px;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 30px 25px -20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product__image {
+    height: 49%;
+    max-width: none;
+  }
+  
+  .product__title {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 27pt;
+    color: #000;
+    margin: 0 0 0.5em 0;
+    line-height: 1.1;
+    overflow: hidden;
+  }
+  
+  .product__price {
+    font-size: 22px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 450px;
+    left: 60px;
+    width: 60px;
+    height: 60px;
+    color: black;
+  }
+  
+  .product__category {
+    height: 80px;
+    overflow: hidden;
+    margin-bottom: 1em;
+  }
+  
+  .product__btn {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: black;
+    color: whitesmoke;
+    
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 30px 25px -20px rgba(0, 0, 0, 0.15);
+  }
+  .product__btn:hover {
+    box-shadow: 0 36px 28px -20px rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke;
+    color: black;
+  }
